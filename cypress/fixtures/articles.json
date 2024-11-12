@@ -1,0 +1,24 @@
+{
+    "articles": [
+        {
+            "slug": "New-Title-5675",
+            "title": "Title 1",
+            "description": "this is a description",
+            "body": "this is a body of the article",
+            "tagList": [],
+            "createdAt": "2024-06-26T18:35:33.461Z",
+            "updatedAt": "2024-06-26T18:35:33.461Z",
+            "favorited": false,
+            "favoritesCount": 6,
+            "author": {
+                "username": "elzatlebron",
+                "bio": null,
+                "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
+                "following": false
+            }
+        }
+    ],
+        "articlesCount": 1
+
+    }
+    

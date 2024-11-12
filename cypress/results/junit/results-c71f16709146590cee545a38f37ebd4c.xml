@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.576" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-07-04T18:44:25" tests="0" file="cypress/e2e/firstTest.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test with backend" timestamp="2024-07-04T18:44:25" tests="1" time="9.574" failures="1">
+    <testcase name="Test with backend delete a new article in al global feed" time="8.679" classname="delete a new article in al global feed">
+      <failure message="`cy.request()` failed on:
+
+https://conduit-api.bondaracademy.com/api/articles/
+
+The response we received from your web server was:
+
+  &gt; 422: Unprocessable Entity
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://conduit-api.bondaracademy.com/api/articles/
+Headers: {
+  &quot;Connection&quot;: &quot;keep-alive&quot;,
+  &quot;Authorization&quot;: &quot;Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1Njc1fSwiaWF0IjoxNzIwMTE4Njc0LCJleHAiOjE3MjUzMDI2NzR9.Va3Pe0nkKlXt73O82Zj4NLcOfuPX5psDn8XT-ibD4cw&quot;,
+  &quot;user-agent&quot;: &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.12.0 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36&quot;,
+  &quot;accept&quot;: &quot;*/*&quot;,
+  &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;,
+  &quot;content-type&quot;: &quot;application/json&quot;,
+  &quot;content-length&quot;: 121
+}
+Body: {&quot;article&quot;:{&quot;title&quot;:&quot;Request from API&quot;,&quot;description&quot;:&quot;API testing is easy &quot;,&quot;body&quot;:&quot;this is lebron&apos;s page&quot;,&quot;tagList&quot;:[]}}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 422 - Unprocessable Entity
+Headers: {
+  &quot;x-powered-by&quot;: &quot;Express&quot;,
+  &quot;access-control-allow-origin&quot;: &quot;https://conduit.bondaracademy.com&quot;,
+  &quot;vary&quot;: &quot;Origin&quot;,
+  &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+  &quot;etag&quot;: &quot;W/\&quot;27-BNeuaWQ7DHvW/r+pl+qdJiF06Is\&quot;&quot;,
+  &quot;x-cloud-trace-context&quot;: &quot;41687ee488bc42e3f5c3787d924f356e&quot;,
+  &quot;date&quot;: &quot;Thu, 04 Jul 2024 18:44:35 GMT&quot;,
+  &quot;server&quot;: &quot;Google Frontend&quot;,
+  &quot;content-length&quot;: &quot;39&quot;
+}
+Body: {
+  &quot;errors&quot;: {
+    &quot;title&quot;: [
+      &quot;must be unique&quot;
+    ]
+  }
+}
+
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed on:
+
+https://conduit-api.bondaracademy.com/api/articles/
+
+The response we received from your web server was:
+
+  > 422: Unprocessable Entity
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://conduit-api.bondaracademy.com/api/articles/
+Headers: {
+  "Connection": "keep-alive",
+  "Authorization": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1Njc1fSwiaWF0IjoxNzIwMTE4Njc0LCJleHAiOjE3MjUzMDI2NzR9.Va3Pe0nkKlXt73O82Zj4NLcOfuPX5psDn8XT-ibD4cw",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.12.0 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36",
+  "accept": "*/*",
+  "accept-encoding": "gzip, deflate",
+  "content-type": "application/json",
+  "content-length": 121
+}
+Body: {"article":{"title":"Request from API","description":"API testing is easy ","body":"this is lebron's page","tagList":[]}}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 422 - Unprocessable Entity
+Headers: {
+  "x-powered-by": "Express",
+  "access-control-allow-origin": "https://conduit.bondaracademy.com",
+  "vary": "Origin",
+  "content-type": "application/json; charset=utf-8",
+  "etag": "W/\"27-BNeuaWQ7DHvW/r+pl+qdJiF06Is\"",
+  "x-cloud-trace-context": "41687ee488bc42e3f5c3787d924f356e",
+  "date": "Thu, 04 Jul 2024 18:44:35 GMT",
+  "server": "Google Frontend",
+  "content-length": "39"
+}
+Body: {
+  "errors": {
+    "title": [
+      "must be unique"
+    ]
+  }
+}
+
+
+https://on.cypress.io/request
+    at <unknown> (https://conduit.bondaracademy.com/__cypress/runner/cypress_runner.js:132776:72)
+    at tryCatcher (https://conduit.bondaracademy.com/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (https://conduit.bondaracademy.com/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (https://conduit.bondaracademy.com/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (https://conduit.bondaracademy.com/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (https://conduit.bondaracademy.com/__cypress/runner/cypress_runner.js:1701:18)
+    at _drainQueueStep (https://conduit.bondaracademy.com/__cypress/runner/cypress_runner.js:2407:12)
+    at _drainQueue (https://conduit.bondaracademy.com/__cypress/runner/cypress_runner.js:2400:9)
+    at Async._drainQueues (https://conduit.bondaracademy.com/__cypress/runner/cypress_runner.js:2416:5)
+    at Async.drainQueues (https://conduit.bondaracademy.com/__cypress/runner/cypress_runner.js:2286:14)
+From Your Spec Code:
+    at Context.eval (webpack://realworld-app/./cypress/e2e/firstTest.spec.js:100:11)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
